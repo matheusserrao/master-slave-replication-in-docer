@@ -1,9 +1,9 @@
 25
-mysql-bin.000003
+mysql-bin.000001
 591
 172.18.0.2
-slave1
-gladyoucame
+root
+123456
 3306
 60
 0
@@ -16,7 +16,7 @@ gladyoucame
 30.000
 
 0
-3490c4cc-036b-11eb-b9f9-0242ac120002
+8630f253-08c3-11eb-bec7-0242ac120002
 86400
 
 
