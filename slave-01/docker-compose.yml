@@ -1,0 +1,20 @@
+version: '3.5'
+
+services:
+  mysql_slave:
+    image: mysql:5.7
+    env_file:
+      - ./mysql.env
+    container_name: "mysql_slave"
+    restart: "no"
+    ports:
+      - 4407:3306
+    volumes:
+      - ./config/mysql.conf.cnf:/etc/mysql/conf.d/mysql.conf.cnf
+      - ./data:/var/lib/mysql
+    networks:
+      - master_network
+  
+networks:
+  master_network:
+    external: true
